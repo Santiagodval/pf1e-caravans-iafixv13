@@ -68,7 +68,7 @@
       }
     },
     "Item": {
-      "pf1e-caravans.equipment": {
+      "equipment": {
         "htmlFields": [
           "description.value"
         ],
@@ -78,7 +78,7 @@
           ]
         }
       },
-      "pf1e-caravans.wagon": {
+      "wagon": {
         "htmlFields": [
           "description.value"
         ],
@@ -88,7 +88,7 @@
           ]
         }
       },
-      "pf1e-caravans.traveler": {
+      "traveler": {
         "htmlFields": [
           "description.value"
         ],
@@ -98,7 +98,7 @@
           ]
         }
       },
-      "pf1e-caravans.feat": {
+      "feat": {
         "htmlFields": [
           "description.value"
         ],
