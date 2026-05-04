@@ -8,13 +8,24 @@ import {CaravanActor, CaravanItem, EquipmentItem, TravelerItem, WagonItem} from 
 import {CaravanItemSheet} from "./applications/item/caravan-item-sheet.mjs";
 
 Hooks.once("init", () => {
-    registerConfig();
-    registerActors();
-    registerItems();
-    registerTemplates();
 
-    console.log(`${MODULE_ID} | Initialized`);
-})
+  CONFIG.Actor.documentClass = CONFIG.Actor.documentClass || Actor;
+
+  Actors.registerSheet("pf1e-caravans", class CaravanSheet extends ActorSheet {
+    static get defaultOptions() {
+      return mergeObject(super.defaultOptions, {
+        classes: ["pf1", "sheet", "actor", "caravan"],
+        template: "modules/pf1e-caravans/templates/caravan-sheet.html",
+        width: 600,
+        height: 600
+      });
+    }
+  }, {
+    types: ["pf1e-caravans.caravan"],
+    makeDefault: false
+  });
+
+});
 
 Hooks.once('libWrapper.Ready', () => {
     if (!globalThis.libWrapper) return console.warn(`${MODULE_ID} | libWrapper not available; drag/drop guard wrappers skipped.`);
