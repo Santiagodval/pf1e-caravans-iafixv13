@@ -25,7 +25,7 @@ CONFIG.Actor.typeLabels = CONFIG.Actor.typeLabels || {};
       });
     }
   }, {
-    types: ["pf1e-caravans.caravan"],
+    types: ["caravans"],
     makeDefault: false
   });
 
