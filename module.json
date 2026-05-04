@@ -124,8 +124,8 @@
   ],
   "readme": "README.md",
   "license": "LICENSE",
-  "bugs": "https://github.com/Pathfinder1e-FoundryVTT-Modules/pf1e-caravans/issues",
-  "url": "https://github.com/Pathfinder1e-FoundryVTT-Modules/pf1e-caravans",
-  "manifest": "https://raw.githubusercontent.com/Santiagodval/pf1e-caravans-iafixv13/main/module.json",
+  "bugs": "https://github.com/Santiagodval/pf1e-caravans-iafixv13/issues",
+"url": "https://github.com/Santiagodval/pf1e-caravans-iafixv13",
+"manifest": "https://raw.githubusercontent.com/Santiagodval/pf1e-caravans-iafixv13/main/module.json",
 "download": "https://github.com/Santiagodval/pf1e-caravans-iafixv13/archive/refs/heads/main.zip"
 }
