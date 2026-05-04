@@ -56,7 +56,7 @@
   ],
   "documentTypes": {
     "Actor": {
-      "pf1e-caravans.caravan": {
+      "caravan": {
         "htmlFields": [
           "details.notes.value"
         ],
