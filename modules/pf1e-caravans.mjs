@@ -6,7 +6,13 @@ import {CaravanModel, EquipmentModel, FeatModel, TravelerModel, WagonModel} from
 import {CaravanSheet, EquipmentSheet, FeatSheet, TravelerSheet, WagonSheet} from "./applications/_module.mjs";
 import {CaravanActor, CaravanItem, EquipmentItem, TravelerItem, WagonItem} from "./documents/_module.mjs";
 import {CaravanItemSheet} from "./applications/item/caravan-item-sheet.mjs";
+Hooks.once("init", () => {
 
+  CONFIG.Actor.typeLabels = CONFIG.Actor.typeLabels || {};
+
+  CONFIG.Actor.typeLabels["pf1e-caravans.caravan"] = "Caravan";
+
+});
 Hooks.once("init", () => {
 
   CONFIG.Actor.documentClass = CONFIG.Actor.documentClass || Actor;
