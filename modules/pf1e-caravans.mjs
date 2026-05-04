@@ -25,7 +25,7 @@ CONFIG.Actor.typeLabels = CONFIG.Actor.typeLabels || {};
       });
     }
   }, {
-    types: ["caravans"],
+    types: ["caravan"],
     makeDefault: false
   });
 
