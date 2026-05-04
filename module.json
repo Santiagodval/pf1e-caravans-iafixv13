@@ -1,0 +1,135 @@
+{
+  "id": "pf1e-caravans",
+  "title": "Pathfinder 1e - Caravans",
+  "version": "1.1.0-v13-patch1",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf1",
+        "type": "system",
+        "compatibility": {
+          "minimum": "11.0",
+          "verified": "11.11"
+        }
+      }
+    ],
+    "requires": [
+      {
+        "id": "lib-wrapper",
+        "type": "module",
+        "manifest": "https://github.com/ruipin/fvtt-lib-wrapper/releases/latest/download/module.json",
+        "compatibility": {
+          "minimum": "1.12.0",
+          "verified": "1.13.0"
+        }
+      }
+    ]
+  },
+  "description": "Add a caravan sheet and caravan item types to the Pathfinder 1e system.",
+  "authors": [
+    {
+      "name": "KitCat",
+      "discord": "kitcat",
+      "email": "katsulynx@gmail.com",
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "modules/pf1e-caravans.mjs"
+  ],
+  "styles": [
+    "styles/pf1e-caravans.css"
+  ],
+  "packs": [
+    {
+      "name": "caravan-content",
+      "label": "Caravan Content",
+      "path": "packs/caravan-content",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "pf1",
+      "flags": {}
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "pf1e-caravans.caravan": {
+        "htmlFields": [
+          "details.notes.value"
+        ],
+        "filePathFields": {
+          "img": [
+            "IMAGE"
+          ]
+        }
+      }
+    },
+    "Item": {
+      "pf1e-caravans.equipment": {
+        "htmlFields": [
+          "description.value"
+        ],
+        "filePathFields": {
+          "img": [
+            "IMAGE"
+          ]
+        }
+      },
+      "pf1e-caravans.wagon": {
+        "htmlFields": [
+          "description.value"
+        ],
+        "filePathFields": {
+          "img": [
+            "IMAGE"
+          ]
+        }
+      },
+      "pf1e-caravans.traveler": {
+        "htmlFields": [
+          "description.value"
+        ],
+        "filePathFields": {
+          "img": [
+            "IMAGE"
+          ]
+        }
+      },
+      "pf1e-caravans.feat": {
+        "htmlFields": [
+          "description.value"
+        ],
+        "filePathFields": {
+          "img": [
+            "IMAGE"
+          ]
+        }
+      }
+    }
+  },
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "de",
+      "name": "German (Deutsch)",
+      "path": "lang/de.json"
+    }
+  ],
+  "readme": "README.md",
+  "license": "LICENSE",
+  "bugs": "https://github.com/Pathfinder1e-FoundryVTT-Modules/pf1e-caravans/issues",
+  "url": "https://github.com/Pathfinder1e-FoundryVTT-Modules/pf1e-caravans",
+  "manifest": "https://raw.githubusercontent.com/Pathfinder1e-FoundryVTT-Modules/pf1e-caravans/master/module.json",
+  "download": "https://github.com/Pathfinder1e-FoundryVTT-Modules/pf1e-caravans/archive/refs/heads/master.zip"
+}
